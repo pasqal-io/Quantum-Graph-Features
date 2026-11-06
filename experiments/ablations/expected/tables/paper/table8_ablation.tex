@@ -1,0 +1,25 @@
+\begin{table}
+\caption{Quantum feature ablation on ZINC$_{\text{tiny}}$ ($\sim$1.5k graphs, emulation). All node and edge quantum features are used unless stated otherwise. Mean MAE ($\downarrow$) $\pm$ standard deviation over the pooled runs (original runs).}
+\label{tab:ablation-zinc-tiny}
+\centering
+\begin{tabular}{l c c}
+\toprule
+\multirow{2}{*}{Method} & \multicolumn{2}{c}{ZINC$^{*}_{\text{test}}$ (MAE $\downarrow$)} \\
+\cmidrule(lr){2-3}
+ & GCN & GAT \\
+\midrule
+\multicolumn{3}{l}{\textit{Baseline}} \\
+  No PE & $0.520{_{\pm 0.050}}$ & $0.480{_{\pm 0.032}}$ \\
+\midrule
+\multicolumn{3}{l}{\textit{Quantum (FM)}} \\
+  FM$_{1\text{b}}$ & $0.512{_{\pm 0.031}}$ & $0.473{_{\pm 0.045}}$ \\
+  FM$_{2\text{b}}$ & $0.478{_{\pm 0.030}}$ & $0.456{_{\pm 0.031}}$ \\
+  FM & $0.493{_{\pm 0.035}}$ & $0.482{_{\pm 0.055}}$ \\
+\midrule
+\multicolumn{3}{l}{\textit{Quantum (AFM)}} \\
+  AFM$_{1\text{b}}$ & $\best{0.443{_{\pm 0.031}}}$ & $0.454{_{\pm 0.066}}$ \\
+  AFM$_{2\text{b}}$ & $0.532{_{\pm 0.025}}$ & $\best{0.449{_{\pm 0.041}}}$ \\
+  AFM & $\second{0.446}{_{\pm 0.020}}$ & $\second{0.450}{_{\pm 0.067}}$ \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,16 @@
+fusion,config,mean,std,n_trials,std_ddof0,gate_mean,abs_pe_dim,source
+concat,af,0.892943,0.049538,50,0.049040,,20,esa_mutag_5seeds
+concat,af_fm,0.902532,0.050724,50,0.050214,,40,esa_mutag_5seeds
+concat,af_stat,0.898639,0.044522,50,0.044074,,4,esa_mutag_5seeds
+concat,fm,0.912644,0.042632,50,0.042203,,20,esa_mutag_5seeds
+concat,fm_stat,0.887796,0.076728,50,0.075957,,4,esa_mutag_5seeds
+concat,no_pe,0.905433,0.045527,50,0.045069,,0,esa_mutag_5seeds
+gated,af,0.914910,0.048109,50,0.047626,0.862344,20,esa_mutag_5seeds
+gated,af_fm,0.921867,0.042789,50,0.042359,0.829922,40,esa_mutag_5seeds
+gated,af_stat,0.914525,0.042420,50,0.041993,0.887031,4,esa_mutag_5seeds
+gated,fm,0.911381,0.043177,50,0.042743,0.815547,20,esa_mutag_5seeds
+gated,fm_stat,0.918120,0.046403,50,0.045936,0.854844,4,esa_mutag_5seeds
+concat,hw_afm_3t,0.906892,0.047776,50,0.047296,,3,esa_mutag_afm_qpu
+concat,hw_afm_3t_stat,0.898686,0.046273,50,0.045808,,4,esa_mutag_afm_qpu
+gated,hw_afm_3t,0.919700,0.044687,50,0.044238,0.834219,3,esa_mutag_afm_qpu
+gated,hw_afm_3t_stat,0.908509,0.046577,50,0.046109,0.861250,4,esa_mutag_afm_qpu

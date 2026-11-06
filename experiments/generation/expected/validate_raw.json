@@ -1,0 +1,65 @@
+{
+ "mutag_afm": {
+  "graphs": 188,
+  "max_abs_diff": {
+   "onebody": 0.0,
+   "twobody": 0.0
+  }
+ },
+ "mutag_fm": {
+  "graphs": 188,
+  "max_abs_diff": {
+   "onebody": 0.0,
+   "twobody": 0.0
+  }
+ },
+ "mutag_hw_afm": {
+  "graphs": 188,
+  "max_abs_diff": {
+   "onebody": 0.0,
+   "twobody": 0.0
+  }
+ },
+ "zinc_afm_test": {
+  "graphs": 947,
+  "max_abs_diff": {
+   "onebody": 0.0,
+   "twobody": 0.0
+  }
+ },
+ "zinc_afm_train": {
+  "graphs": 9475,
+  "max_abs_diff": {
+   "onebody": 0.0,
+   "twobody": 0.0
+  }
+ },
+ "zinc_afm_val": {
+  "graphs": 946,
+  "max_abs_diff": {
+   "onebody": 0.0,
+   "twobody": 0.0
+  }
+ },
+ "zinc_fm_test": {
+  "graphs": 947,
+  "max_abs_diff": {
+   "onebody": 0.0,
+   "twobody": 0.0
+  }
+ },
+ "zinc_fm_train": {
+  "graphs": 9475,
+  "max_abs_diff": {
+   "onebody": 0.0,
+   "twobody": 0.0
+  }
+ },
+ "zinc_fm_val": {
+  "graphs": 946,
+  "max_abs_diff": {
+   "onebody": 0.0,
+   "twobody": 0.0
+  }
+ }
+}

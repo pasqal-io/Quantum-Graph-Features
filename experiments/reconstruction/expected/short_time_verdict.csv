@@ -1,0 +1,13 @@
+quench,coupling,family,time_ns,r2,threshold,mandatory,passed,comment
+AFM,unweighted,walk,5.0,0.9999994822122492,0.999,True,True,pipeline test: target exactly proportional to A_ij
+AFM,unweighted,walk,10.0,0.9999923301455482,0.999,True,True,pipeline test: target exactly proportional to A_ij
+AFM,unweighted,walk,20.0,0.9999090560249588,0.999,True,True,pipeline test: target exactly proportional to A_ij
+AFM,unweighted,walk,30.0,0.9996976235461787,0.999,True,True,pipeline test: target exactly proportional to A_ij
+AFM,geometric,jpow,5.0,0.9963848861437586,0.98,False,True,diagnostic: linear J~ misses the nonlinearity in J
+AFM,geometric,jpow,10.0,0.9965859141168038,0.98,False,True,diagnostic: linear J~ misses the nonlinearity in J
+AFM,geometric,jpow,20.0,0.9970981946296568,0.98,False,True,diagnostic: linear J~ misses the nonlinearity in J
+AFM,geometric,jpow,30.0,0.997205387522632,0.98,False,True,diagnostic: linear J~ misses the nonlinearity in J
+FM,unweighted,walk,5.0,0.9962575907026202,0.9,False,True,diagnostic: delta_inf^G breaks the universality of the short-time law
+FM,unweighted,walk,10.0,0.996493185805646,0.9,False,True,diagnostic: delta_inf^G breaks the universality of the short-time law
+FM,unweighted,walk,20.0,0.9971417835187841,0.9,False,True,diagnostic: delta_inf^G breaks the universality of the short-time law
+FM,unweighted,walk,30.0,0.9971146124918613,0.9,False,True,diagnostic: delta_inf^G breaks the universality of the short-time law

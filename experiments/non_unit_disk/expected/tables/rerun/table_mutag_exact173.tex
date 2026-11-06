@@ -1,0 +1,29 @@
+\begin{table}[t]
+\caption{%
+  MUTAG, the 173 graphs with $N \le 24$: strong classical baseline (RRWP${+}$Laplacian${+}$ring${+}$geometry) versus its extension by AFM${+}$FM features from the 1000-shot
+  emulation, from exact state-vector dynamics with the register couplings $C_6/r^6$, and
+  from exact dynamics of the graph Hamiltonian $J_{NN} A$ (not realisable by a unit-disk
+  register). Mean macro F$_1$ ($\uparrow$) $\pm$ standard deviation over 10 stratified
+  CV folds $\times$ 5 seeds (re-run with this repository). Bold: best configuration per backbone.
+  Paired over (backbone, fold, seed): emulated ${-}$ classical $= +0.0035$ ($p=0.33$); exact ${-}$ classical $= +0.0056$ ($p=0.086$); exact_nn ${-}$ classical $= +0.0010$ ($p=0.62$); exact_nn ${-}$ exact $= -0.0047$ ($p=0.22$); exact ${-}$ emulated $= +0.0021$ ($p=0.63$).
+}
+\label{tab:mutag-exact-non-unit-disk}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{l c c c c}
+\toprule
+ & \shortstack{Classical\\ \scriptsize $35/33$} & \shortstack{${+}$AFM${+}$FM\\ \scriptsize emulated} & \shortstack{${+}$AFM${+}$FM\\ \scriptsize exact, $C_6/r^6$} & \shortstack{${+}$AFM${+}$FM\\ \scriptsize exact, $J_{NN}A$} \\
+\midrule
+  GCN          & $0.853{_{\pm 0.071}}$ & $0.851{_{\pm 0.075}}$ & $0.856{_{\pm 0.087}}$ & $\mathbf{0.857}{_{\pm 0.085}}$ \\
+  GAT          & $0.845{_{\pm 0.071}}$ & $\mathbf{0.856}{_{\pm 0.087}}$ & $0.852{_{\pm 0.076}}$ & $0.852{_{\pm 0.080}}$ \\
+  GATv2        & $0.857{_{\pm 0.071}}$ & $\mathbf{0.859}{_{\pm 0.079}}$ & $0.851{_{\pm 0.097}}$ & $0.832{_{\pm 0.087}}$ \\
+  GINE         & $0.845{_{\pm 0.083}}$ & $0.854{_{\pm 0.083}}$ & $\mathbf{0.860}{_{\pm 0.061}}$ & $0.856{_{\pm 0.076}}$ \\
+  GEN          & $0.849{_{\pm 0.074}}$ & $\mathbf{0.854}{_{\pm 0.072}}$ & $0.840{_{\pm 0.090}}$ & $0.834{_{\pm 0.105}}$ \\
+  Transformer  & $0.854{_{\pm 0.072}}$ & $0.859{_{\pm 0.088}}$ & $\mathbf{0.872}{_{\pm 0.071}}$ & $0.864{_{\pm 0.071}}$ \\
+  General      & $0.850{_{\pm 0.083}}$ & $0.845{_{\pm 0.099}}$ & $0.864{_{\pm 0.090}}$ & $\mathbf{0.865}{_{\pm 0.082}}$ \\
+\midrule
+  Mean & $0.851$ & $0.854$ & $0.856$ & $0.852$ \\
+\bottomrule
+\end{tabular}
+\end{table}

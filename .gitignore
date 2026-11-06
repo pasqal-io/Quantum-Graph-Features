@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Data and outputs
+/data/
+/results/
+
+# Agent scratch
+.superpowers/
+
+# Private device specifications: never commit
+*fresnel*.json

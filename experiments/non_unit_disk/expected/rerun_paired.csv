@@ -1,0 +1,6 @@
+a,b,mean_diff,n,wilcoxon_p
+emulated,classical,0.00354412,350,0.325826
+exact,classical,0.00564325,350,0.08595
+exact_nn,classical,0.000978118,350,0.618434
+exact_nn,exact,-0.00466513,350,0.216866
+exact,emulated,0.00209913,350,0.628089

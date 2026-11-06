@@ -1,0 +1,17 @@
+model_type,dataset,config,zinc_mode,MAE_mean,MAE_std,count
+GAT,antiferro,no_pe,zinc,0.479946,0.032207,150
+GAT,antiferro,onebody_only,zinc,0.454238,0.065535,150
+GAT,antiferro,onebody_twobody,zinc,0.450366,0.066866,150
+GAT,antiferro,twobody_only,zinc,0.448660,0.040788,150
+GAT,ferro,no_pe,zinc,0.479699,0.031875,157
+GAT,ferro,onebody_only,zinc,0.473025,0.044734,150
+GAT,ferro,onebody_twobody,zinc,0.481686,0.054591,150
+GAT,ferro,twobody_only,zinc,0.456276,0.031150,150
+GCN,antiferro,no_pe,zinc,0.519748,0.049289,150
+GCN,antiferro,onebody_only,zinc,0.439511,0.029632,135
+GCN,antiferro,onebody_twobody,zinc,0.445554,0.020002,150
+GCN,antiferro,twobody_only,zinc,0.532107,0.025202,115
+GCN,ferro,no_pe,zinc,0.521238,0.050087,153
+GCN,ferro,onebody_only,zinc,0.512262,0.031010,152
+GCN,ferro,onebody_twobody,zinc,0.493370,0.035053,150
+GCN,ferro,twobody_only,zinc,0.477997,0.029500,150

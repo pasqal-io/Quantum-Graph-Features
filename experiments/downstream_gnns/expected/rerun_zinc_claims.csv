@@ -1,0 +1,11 @@
+model,table3_best,best_is_hybrid,champion_gap,geometry_gain,src
+GAT,rrwp_af_stat_fm_stat,True,-0.0142,0.0107,reference
+GCN,rrwp_af_stat,True,-0.0047,0.0358,reference
+GINE,rrwp_af_stat_fm_stat,True,-0.0008,0.0094,reference
+General,rrwp_fm_stat,True,0.0006,0.0193,reference
+Transformer,rrwp_fm_stat,True,0.0021,0.0209,reference
+GAT,rrwp_af_stat_fm_stat,True,-0.0142,0.0107,rerun
+GCN,rrwp_af_stat,True,-0.0047,0.0358,rerun
+GINE,rrwp_af_stat_fm_stat,True,-0.0008,0.0094,rerun
+General,rrwp_fm_stat,True,0.0006,0.0193,rerun
+Transformer,rrwp_fm_stat,True,0.0021,0.0209,rerun

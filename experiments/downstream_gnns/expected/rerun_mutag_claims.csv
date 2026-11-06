@@ -1,0 +1,11 @@
+model,table2_best,best_is_hybrid,champion_gap,geometry_gain,hw_stat_gap,hw_full_gap,src
+GAT,rrwp_fm_stat,True,0.0058,0.0186,-0.0067,-0.0100,reference
+GCN,rrwp_af,True,0.0112,0.0034,0.0000,-0.0413,reference
+GINE,rrwp_af_fm,True,0.0018,0.0190,0.0058,-0.0066,reference
+General,rrwp_fm_stat,True,0.0018,0.0045,0.0045,-0.0075,reference
+Transformer,rrwp_af_fm,True,0.0021,0.0280,0.0085,-0.0134,reference
+GAT,rrwp_fm_stat,True,0.0058,0.0186,-0.0067,-0.0100,rerun
+GCN,rrwp_af,True,0.0112,0.0034,0.0000,-0.0413,rerun
+GINE,rrwp_af_fm,True,0.0018,0.0190,0.0058,-0.0066,rerun
+General,rrwp_fm_stat,True,0.0018,0.0045,0.0045,-0.0075,rerun
+Transformer,rrwp_af_fm,True,0.0021,0.0280,0.0085,-0.0134,rerun

@@ -1,0 +1,17 @@
+dataset,quench,target,reconstructor,probe,r2,num_columns,num_rows
+MUTAG,AFM,residual_raw,beyond,ols,9.495700443262756e-05,5,30505
+MUTAG,AFM,residual_raw,beyond,rf,-0.0008635267388821255,5,30505
+MUTAG,AFM,residual_within,beyond,ols,0.00010442398788945706,5,30505
+MUTAG,AFM,residual_within,beyond,rf,-0.0008009436335696396,5,30505
+MUTAG,AFM,residual_raw,ceiling,ols,1.5543122344752192e-15,175,30505
+MUTAG,AFM,residual_raw,ceiling,rf,0.18620886310312168,175,30505
+MUTAG,AFM,target_full,beyond,ols,0.00035641490510407436,5,30505
+MUTAG,AFM,target_full,beyond,rf,0.006096185638071683,5,30505
+MUTAG,FM,residual_raw,beyond,ols,0.0027274817248882366,5,30505
+MUTAG,FM,residual_raw,beyond,rf,-0.01209728038945701,5,30505
+MUTAG,FM,residual_within,beyond,ols,0.006052996472513228,5,30505
+MUTAG,FM,residual_within,beyond,rf,-6.480438812683786e-05,5,30505
+MUTAG,FM,residual_raw,ceiling,ols,-8.881784197001252e-16,175,30505
+MUTAG,FM,residual_raw,ceiling,rf,0.13155197309965383,175,30505
+MUTAG,FM,target_full,beyond,ols,-0.3620464160026744,5,30505
+MUTAG,FM,target_full,beyond,rf,0.14765027524909768,5,30505

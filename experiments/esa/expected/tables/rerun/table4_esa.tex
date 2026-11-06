@@ -1,0 +1,33 @@
+\begin{table}[t]
+\caption{%
+ESA model performance on MUTAG.
+RWSE$^{*}$ denotes RWSE augmented with ring-membership features.
+Mean F$_1$ of the positive class ($\uparrow$) $\pm$ standard deviation (population) over 10 stratified cross-validation folds $\times$ 5 seeds (re-run with this repository).
+For gated fusion, the initial gate value is $0.88$; learned gate values are $0.887$ for AFM$_{\mathrm{stat}}$, $0.855$ for FM$_{\mathrm{stat}}$, $0.862$ for AFM, $0.816$ for FM, $0.830$ for AFM+FM, $0.834$ for HW-AFM, $0.861$ for HW-AFM$_{\mathrm{stat}}$.
+\mbox{$\best{\text{Best}}$} and \mbox{$\second{\text{2nd best}}$} indicate the best and runner-up methods overall.
+}
+\label{tab:mutag-esa}
+\centering
+\small
+\begin{tabular}{l c c}
+\toprule
+\multirow{2}{*}{Method} & \multicolumn{2}{c}{MUTAG (F$_1$ $\uparrow$)} \\
+\cmidrule(lr){2-3}
+ & Concat. & Gated \\
+\midrule
+\multicolumn{3}{l}{\textit{Baseline}} \\
+  $\text{RWSE}^{*}$ & $0.905{_{\pm 0.045}}$ & --- \\
+\midrule
+\multicolumn{3}{l}{\textit{Hybrid (classical ${+}$ quantum emulation)}} \\
+  $\text{RWSE}^{*}{+}\text{AFM}_{\text{stat}}$ & $0.899{_{\pm 0.044}}$ & $0.915{_{\pm 0.042}}$ \\
+  $\text{RWSE}^{*}{+}\text{FM}_{\text{stat}}$ & $0.888{_{\pm 0.076}}$ & $0.918{_{\pm 0.046}}$ \\
+  $\text{RWSE}^{*}{+}\text{AFM}$ & $0.893{_{\pm 0.049}}$ & $0.915{_{\pm 0.048}}$ \\
+  $\text{RWSE}^{*}{+}\text{FM}$ & $0.913{_{\pm 0.042}}$ & $0.911{_{\pm 0.043}}$ \\
+  $\text{RWSE}^{*}{+}\text{AFM}{+}\text{FM}$ & $0.903{_{\pm 0.050}}$ & $\best{0.922{_{\pm 0.042}}}$ \\
+\midrule
+\multicolumn{3}{l}{\textit{Hybrid (classical ${+}$ quantum hardware)}} \\
+  $\text{RWSE}^{*}{+}\text{HW-AFM}$ & $0.907{_{\pm 0.047}}$ & $\second{0.920}{_{\pm 0.044}}$ \\
+  $\text{RWSE}^{*}{+}\text{HW-AFM}_{\text{stat}}$ & $0.899{_{\pm 0.046}}$ & $0.909{_{\pm 0.046}}$ \\
+\bottomrule
+\end{tabular}
+\end{table}

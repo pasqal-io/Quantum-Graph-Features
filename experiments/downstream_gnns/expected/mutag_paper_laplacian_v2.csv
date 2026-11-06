@@ -1,0 +1,6 @@
+model,config,mean,std,n_trials,abs_pe_dim,rel_pe_dim,source
+GINE,laplacian,0.807478,0.086884,50,1,1,v2
+GAT,laplacian,0.744200,0.099358,50,1,1,v2
+Transformer,laplacian,0.801228,0.083663,50,1,1,v2
+GCN,laplacian,0.747309,0.097121,50,1,1,v2
+General,laplacian,0.839720,0.082834,50,1,1,v2

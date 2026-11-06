@@ -1,0 +1,25 @@
+\begin{table*}
+\caption{Model-size ablation for GCN on ZINC$_{\text{tiny}}$ ($\sim$1.5k graphs, emulation). Mean MAE ($\downarrow$) $\pm$ standard deviation over the pooled runs (original runs).}
+\label{tab:gcn-zinc-per-size-all}
+\centering
+\begin{tabular}{l c c c c c c c c}
+\toprule
+\multirow{2}{*}{Method} & \multicolumn{8}{c}{GCN on ZINC$_{\text{test}}^{*}$ (MAE $\downarrow$)} \\
+\cmidrule(lr){2-9}
+ & Tiny & Small & Medium & Large & Huge & V.~Huge & Massive & Giant \\
+\midrule
+\multicolumn{9}{l}{\textit{Baseline}} \\
+  ZINC (Baseline) & $0.530{_{\pm 0.044}}$ & $0.529{_{\pm 0.025}}$ & $0.490{_{\pm 0.049}}$ & $0.513{_{\pm 0.062}}$ & $0.515{_{\pm 0.055}}$ & $0.527{_{\pm 0.048}}$ & $0.528{_{\pm 0.042}}$ & $0.546{_{\pm 0.042}}$ \\
+\midrule
+\multicolumn{9}{l}{\textit{Quantum (FM)}} \\
+  FM$_{1\text{b}}$ & $0.518{_{\pm 0.031}}$ & $0.520{_{\pm 0.014}}$ & $0.514{_{\pm 0.033}}$ & $0.520{_{\pm 0.043}}$ & $0.503{_{\pm 0.028}}$ & $0.506{_{\pm 0.029}}$ & $0.508{_{\pm 0.021}}$ & $0.516{_{\pm 0.026}}$ \\
+  FM$_{2\text{b}}$ & $0.478{_{\pm 0.026}}$ & $0.479{_{\pm 0.025}}$ & $0.461{_{\pm 0.018}}$ & $0.473{_{\pm 0.026}}$ & $0.468{_{\pm 0.028}}$ & $0.478{_{\pm 0.030}}$ & $0.494{_{\pm 0.028}}$ & $0.511{_{\pm 0.036}}$ \\
+  FM & $0.524{_{\pm 0.013}}$ & $0.496{_{\pm 0.024}}$ & $0.488{_{\pm 0.011}}$ & $0.484{_{\pm 0.035}}$ & $0.481{_{\pm 0.042}}$ & $0.492{_{\pm 0.036}}$ & $0.496{_{\pm 0.033}}$ & $0.526{_{\pm 0.038}}$ \\
+\midrule
+\multicolumn{9}{l}{\textit{Quantum (AFM)}} \\
+  AFM$_{1\text{b}}$ & $\second{0.469}{_{\pm 0.023}}$ & $\best{0.450{_{\pm 0.023}}}$ & $\best{0.441{_{\pm 0.036}}}$ & $\best{0.434{_{\pm 0.034}}}$ & $\best{0.434{_{\pm 0.031}}}$ & $\second{0.433}{_{\pm 0.026}}$ & $\second{0.451}{_{\pm 0.033}}$ & $\second{0.458}{_{\pm 0.021}}$ \\
+  AFM$_{2\text{b}}$ & $0.554{_{\pm 0.016}}$ & $0.532{_{\pm 0.026}}$ & $0.538{_{\pm 0.005}}$ & $0.522{_{\pm 0.030}}$ & $0.534{_{\pm 0.023}}$ & $0.527{_{\pm 0.025}}$ & $0.533{_{\pm 0.024}}$ & $0.546{_{\pm 0.026}}$ \\
+  AFM & $\best{0.464{_{\pm 0.009}}}$ & $\second{0.459}{_{\pm 0.010}}$ & $\second{0.455}{_{\pm 0.014}}$ & $\second{0.448}{_{\pm 0.021}}$ & $\second{0.438}{_{\pm 0.017}}$ & $\best{0.433{_{\pm 0.024}}}$ & $\best{0.442{_{\pm 0.016}}}$ & $\best{0.452{_{\pm 0.016}}}$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,43 @@
+# Pinned environment of the original runs (ESA, Table 4, and the downstream GNNs, Tables 2-3):
+# the package versions of the run environment (Python 3.11, torch 2.4.0 + CUDA 12.1, xformers
+# 0.0.27.post2, PyG 2.6.0, Lightning 2.5.3, bitsandbytes 0.49.2, numpy 2.4.4, scikit-learn
+# 1.7.1, ...). qgf itself is imported from the repository sources (PYTHONPATH=src), since its
+# own lock pins a newer torch build. In this environment the ports reproduce the stored trials
+# bit for bit: ESA on an A100 with `--attention xformers`; the GNNs on CPU (AMD EPYC 7742, one
+# thread per process for MUTAG, four for ZINC). See experiments/esa and experiments/downstream_gnns.
+#   uv sync --project reproduce/paper_env
+#   PYTHONPATH=src uv run --project reproduce/paper_env python experiments/esa/run.py \
+#       --attention xformers --configs paper
+#   ESA_ENV=paper ... experiments/esa/submit.sh;  GNN_ENV=paper ... experiments/downstream_gnns/submit.sh
+[project]
+name = "qgf-paper-env"
+version = "0"
+requires-python = "==3.11.*"
+dependencies = [
+    "torch==2.4.0",
+    "xformers==0.0.27.post2",
+    "torch-geometric==2.6.0",
+    "bitsandbytes==0.49.2",
+    "numpy==2.4.4",
+    "scipy==1.17.1",
+    "scikit-learn==1.7.1",
+    "pandas==2.3.1",
+    "networkx==3.5",
+    "pyarrow==23.0.1",
+    "tqdm==4.67.1",
+    "setuptools==80.9.0",  # triton imports it; without it xformers reports no Triton
+    "pytorch-lightning==2.5.3",
+    "torchmetrics==1.8.1",
+]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu121" }
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
